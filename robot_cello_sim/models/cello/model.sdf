@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+    <model name="cello">
+        <static>true</static>
+        <link name="base_link">
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://cello/meshes/cello_asm_755mm.stl</uri>
+                        <scale>0.001 0.001 0.001</scale> <!-- Adjust scale as necessary -->
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>1 1 1 1</ambient>
+                    <diffuse>1 1 1 1</diffuse>
+                    <specular>1 1 1 1</specular>
+                    <emissive>0 0 0 1</emissive>
+                </material>
+            </visual>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://cello/meshes/cello_asm_755mm.stl</uri>
+                        <scale>0.001 0.001 0.001</scale> <!-- Adjust scale as necessary -->
+                    </mesh>
+                </geometry>
+            </collision>
+        </link>
+    </model>
+</sdf>
